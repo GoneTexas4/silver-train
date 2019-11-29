@@ -2,16 +2,16 @@ name: CI
 
 on: [push]
 
-jobs:
-  build:
+jobs: build
+  build: js
 
     runs-on: ubuntu-latest
 
-    steps:
+    steps:3
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
-      run: |
+      run: | CI
         echo Add other actions to build,
         echo test, and deploy your project.
